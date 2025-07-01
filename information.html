@@ -1,43 +1,290 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/icons/css/font-awesome.min.css">
+    <style>
+        :root {
+            --BACKGROUND: #131417;
+            --FOREGROUND: #ffffff;
+            --GREEN: #47cf73;
+        }
+
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+        .font-kalameh-medium {
+            font-family: kalameh-medium;
+        }
+    </style>
     <title>اطلاعات مسابقه</title>
 </head>
-<body>
-    <section id="competition-info">
-        <h2>اطلاعات مسابقه</h2>
-        
-        <h3>عنوان مسابقه:</h3>
-        <p><strong>مسابقه برنامه‌نویسی </strong></p>
-        
-        <h3>توضیحات مسابقه:</h3>
-        <p>این مسابقه فرصتی عالی برای دانشجویانی است که می‌خواهند مهارت‌های برنامه نویسی خود را به چالش بکشند و جوایز ارزنده‌ای کسب کنند.
 
-            .</p>
-        
-        <h3>تاریخ شروع و پایان:</h3>
-        <p><strong>شروع:</strong> 20 اذر 1403 | <strong>پایان:</strong> 25 اذر 1403</p>
-        
-        <h3>جوایز:</h3>
-        <ul>
-            <li>نفر اول: 50 میلیون تومان</li>
-            <li>نفر دوم: 35 میلیون تومان</li>
-            <li>نفر سوم: 20 میلیون تومان</li>
-        </ul>
-        
-        <h3>نحوه شرکت:</h3>
-        <p>۱. ثبت‌نام در سایت <br> ۲. شرکت در مرحله مقدماتی <br> ۳. ورود به فینال و رقابت نهایی</p>
-        
-        <button>ثبت‌نام در مسابقه</button>
-        
-        <h3>وضعیت مسابقه:</h3>
-        <p>در حال ثبت‌نام</p>
-    </section>
-    
-    <footer>
-        <p>تمامی حقوق محفوظ است © ۲۰۲۵</p>
-    </footer>
+<body class="bg-[color:var(--BACKGROUND)] m-0">
+    <div class="hidden lg:flex justify-center w-full items-start">
+        <div class="w-[10%] flex justify-center h-screen items-start">
+            <img class="w-2/5 mt-[32px];" src="assets/images/logo/logo.png" alt="لوگوی سایت">
+        </div>
+        <div class="w-[90%] border-r-[rgba(255,255,255,0.288)] border-r border-solid">
+            <header class="flex items-center justify-center w-full h-fit p-10">
+                <div class="w-3/5 h-full">
+                    <nav>
+                        <ul class="list-none mr-[60px] p-0">
+                            <li
+                                class="inline-block w-fit border-b-[color:var(--BACKGROUND)] transition-all duration-[0.2s] px-5 py-2.5 border-b border-solid hover:border-b-[color:var(--GREEN)] hover:border-b hover:border-solid">
+                                <a class="text-[color:var(--FOREGROUND)]" href="./index.html">خانه</a>
+                            </li>
+                            <li
+                                class="inline-block w-fit border-b-[color:var(--BACKGROUND)] transition-all duration-[0.2s] px-5 py-2.5 border-b border-solid hover:border-b-[color:var(--GREEN)] hover:border-b hover:border-solid">
+                                <a class="text-[color:var(--FOREGROUND)]" href="./about-us.html">درباره ما</a>
+                            </li>
+                            <li
+                                class="inline-block w-fit border-b-[color:var(--BACKGROUND)] transition-all duration-[0.2s] px-5 py-2.5 border-b border-solid hover:border-b-[color:var(--GREEN)] hover:border-b hover:border-solid">
+                                <a class="text-[color:var(--FOREGROUND)]" href="#">تماس باما <i
+                                        class="fa fa-angle-down"></i></a>
+                            </li>
+                            <li
+                                class="inline-block w-fit border-b-[color:var(--BACKGROUND)] transition-all duration-[0.2s] px-5 py-2.5 border-b border-solid hover:border-b-[color:var(--GREEN)] hover:border-b hover:border-solid">
+                                <a class="text-[color:var(--FOREGROUND)]" href="./information.html">اطلاعات مسابقه</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="w-2/5 flex items-center justify-center">
+                    <button
+                        class="mx-[10px] font-kalameh-medium cursor-pointer w-[156px] h-[45.54px] text-[small] border border solid border-[color:var(--GREEN)] rounded-[7px_20px_7px_20px] text-[white]">حساب کاربری دارم</button>
+                    <button
+                        class="mx-[10px] font-kalameh-medium cursor-pointer w-[156px] h-[45.54px] text-[small] bg-[color:var(--GREEN)] shadow-[1px_1px_14px_1px_var(--GREEN)] rounded-[7px_20px_7px_20px] border-0">برگشت <i class="fa fa-arrow-left mr-[15px]"></i></button>
+                </div>
+            </header>
+            <!-- ----------------------- -->
+            <div class="w-[100%] h-[150px] lg:flex-col justify-items-center content-center">
+                <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">اطلاعات مسابقه</h3>
+                <p class="font-kalameh-medium text-stone-50">بسیار خوشحالیم که میزبان شما در این مسابقه باشیم تمام
+                    اطلاعاتی که نیاز داری میتونی توی جدول زیر بدست بیاری</p>
+
+            </div>
+            <div class="w-[100%] h-[600px] flex-col justify-items-center content-center mb-[100px]">
+                <div class="w-[50%] h-[200px] flex justify-items-center content-center">
+                    <div class="w-[50%] h-[100%] border-b border-l border-r border-solid border-white p-[20px]">
+                        <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">مکان برگزاری:</h3>
+                        <p class="font-kalameh-medium text-stone-50">جاده ارکان، دانشگاه دولتی بجنورد</p>
+                        <button class="font-kalameh-medium text-[#47CF73] flex mt-40px"><img class="ml-[15px]"
+                                src="./assets/images/icons/Discovery.png" width="24" height="24">استفاده از گوگل
+                            مپ</button>
+
+                    </div>
+                    <div class="w-[50%] h-[100%] border-b border-l border-solid border-white p-[20px]">
+                        <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">زمان برگزاری:</h3>
+                        <div class="flex justify-around ">
+                            <p class="font-kalameh-medium text-stone-50">21 خرداد 1404</p>
+                            <p class="font-kalameh-medium text-stone-50">ساعت 10 صبح</p>
+                        </div>
+                        <button class="font-kalameh-medium text-[#47CF73] flex mt-40px"><img class="ml-[15px]"
+                                src="./assets/images/icons/Calendar.png" width="24" height="24">اضافه کردن به گوگل
+                            کلندر</button>
+                    </div>
+                </div>
+                <div class="w-[50%] h-[200px] flex justify-items-center content-center">
+                    <div class="w-[50%] h-[100%] border-b border-l border-r border-solid border-white p-[20px]">
+                        <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">اطلاعات مسابقات:</h3>
+                        <p class="font-kalameh-medium text-stone-50">لورم ایپسوم یک متن ساختگی برای انجام تست است</p>
+                        <button class="font-kalameh-medium text-[#47CF73] flex mt-40px">بیشتر +</button>
+                    </div>
+                    <div class="w-[50%] h-[100%] border-b border-l border-solid border-white p-[20px]">
+                        <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">قوانین مسابقه:</h3>
+                        <p class="font-kalameh-medium text-stone-50">لورم ایپسوم یک متن ساختگی برای انجام تست است</p>
+                        <button class="font-kalameh-medium text-[#47CF73] flex mt-40px">بیشتر +</button>
+                    </div>
+                </div>
+                <div class="w-[50%] h-[200px] flex justify-items-center content-center">
+                    <div class="w-[50%] h-[100%] border-l border-r border-solid border-white p-[20px]">
+                        <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">اهداف مسابقه:</h3>
+                        <p class="font-kalameh-medium text-stone-50">لورم ایپسوم یک متن ساختگی برای انجام تست است</p>
+                        <button class="font-kalameh-medium text-[#47CF73] flex mt-40px">بیشتر +</button>
+                    </div>
+                    <div class="w-[50%] h-[100%] border-l border-solid border-white">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------- -->
+                <div class="w-[100%] flex items-center justify-center">
+                    <div class="w-[90%] ">
+                        <h2
+                            class="font-kalameh-medium block leading-loose font-kalameh-bold text-lg text-white w-[100%] flex justify-center mt-[50px] mb-[35px]">
+                            راه های ارتباطی
+                        </h2>
+                        <div
+                            class="w-[100%] flex flex-col lg:flex-row items-center justify-space-around text-[color:var(--FOREGROUND)] lg:flex items-center justify-center text-[color:var(--FOREGROUND)]">
+                            <div
+                                class="w-[100%] lg:w-[450px] mx-[10px] my-[10px] flex items-center justify-center h-[70px] border transition-all duration-[0.2s] rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                                <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                                    <p class="font-kalameh-medium text-sm">شماره کارشناس</p>
+                                </div>
+                                <div class="w-6/12 flex items-center pl-2.5 justify-end">
+                                    <p>09397138757</p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-[100%] lg:w-[450px] mx-[10px] my-[10px] flex items-center justify-center h-[70px] border transition-all duration-[0.2s] rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                                <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
+                                    <i class="fa fa-inbox"></i>
+                                </div>
+                                <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                                    <p class="font-kalameh-medium text-sm">ایمیل</p>
+                                </div>
+                                <div class="w-6/12 flex items-center pl-2.5 justify-end">
+                                    rezaimani963@gmail.com
+                                </div>
+                            </div>
+                            <div
+                                class="w-[100%] lg:w-[450px] mx-[10px] my-[10px] flex items-center justify-center h-[70px] border transition-all duration-[0.2s] rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                                <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
+                                    <i class="fa fa-instagram"></i>
+                                </div>
+                                <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                                    <p class="font-kalameh-medium text-sm">اینستاگرام</p>
+                                </div>
+                                <div class="w-6/12 flex items-center pl-2.5 justify-end">
+                                    <p>@iamrezaimanii</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------mobile----------------------------- -->
+    <div class="overflow-hidden lg:hidden">
+        <div class="w-full flex justify-between items-center h-[100px] pt-[30px] pb-0 px-10">
+            <i class="fa fa-bars text-[color:var(--FOREGROUND)]  !text-3xl  my_menu_icon"></i>
+            <img src="assets/images/logo/mobile-logo.png" alt="رویداد برنامه نویسی">
+            <a href="index.html"><button class="text-[color:var(--GREEN)] bg-transparent text-[medium] border-0">برگشت<i
+                        class="fa fa-arrow-left mr-[10px]"></i></button></a>
+        </div>
+        <div class="w-[100%] h-[150px] flex-col justify-items-center content-center px-[10px]">
+            <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">اطلاعات مسابقه</h3>
+            <p class="font-kalameh-medium text-stone-50 text-center">بسیار خوشحالیم که میزبان شما در این مسابقه باشیم
+                تمام
+                اطلاعاتی که نیاز داری میتونی توی جدول زیر بدست بیاری</p>
+
+        </div>
+        <div class="w-[100%]  flex-col justify-items-center content-center px-[10px]">
+            <div class="w-[80%] h-[100%] border-b border-l border-r border-solid border-white py-[25px] px-[50px]">
+                <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">مکان برگزاری:</h3>
+                <p class="font-kalameh-medium text-stone-50">جاده ارکان، دانشگاه دولتی بجنورد</p>
+                <button class="font-kalameh-medium text-[#47CF73] flex mt-40px"><img class="ml-[15px]"
+                        src="./assets/images/icons/Discovery.png" width="24" height="24">استفاده از گوگل
+                    مپ</button>
+
+            </div>
+            <div class="w-[80%] h-[100%] border-b border-l border-r border-solid border-white py-[25px] px-[50px]">
+                <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">زمان برگزاری:</h3>
+                <div class="flex justify-around ">
+                    <p class="font-kalameh-medium text-stone-50">21 خرداد 1404</p>
+                    <p class="font-kalameh-medium text-stone-50">ساعت 10 صبح</p>
+                </div>
+                <button class="font-kalameh-medium text-[#47CF73] flex mt-40px"><img class="ml-[15px]"
+                        src="./assets/images/icons/Calendar.png" width="24" height="24">اضافه کردن به گوگل
+                    کلندر</button>
+            </div>
+            <div class="w-[80%] h-[100%] border-b border-l border-r border-solid border-white py-[25px] px-[50px]">
+                <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">اطلاعات مسابقات:</h3>
+                <p class="font-kalameh-medium text-stone-50">لورم ایپسوم یک متن ساختگی برای انجام تست است</p>
+                <button class="font-kalameh-medium text-[#47CF73] flex mt-40px">بیشتر +</button>
+            </div>
+            <div class="w-[80%] h-[100%] border-b border-l border-r border-solid border-white py-[25px] px-[50px]">
+                <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">قوانین مسابقه:</h3>
+                <p class="font-kalameh-medium text-stone-50">لورم ایپسوم یک متن ساختگی برای انجام تست است</p>
+                <button class="font-kalameh-medium text-[#47CF73] flex mt-40px">بیشتر +</button>
+            </div>
+            <div class="w-[80%] h-[100%] border-b border-l border-r border-solid border-white py-[25px] px-[50px]">
+                <h3 class="font-kalameh-medium text-stone-50 text-2xl leading-[70px]">اهداف مسابقه:</h3>
+                <p class="font-kalameh-medium text-stone-50">لورم ایپسوم یک متن ساختگی برای انجام تست است</p>
+                <button class="font-kalameh-medium text-[#47CF73] flex mt-40px">بیشتر +</button>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------  -->
+        <div class="w-[100%] flex items-center justify-center">
+            <div class="w-[90%] ">
+                <h2
+                    class="font-kalameh-medium block leading-loose font-kalameh-bold text-lg text-white mb-[35px] mt-[50px]">
+                    راه های ارتباطی</h2>
+                <div
+                    class="w-[100%] flex flex-col lg:flex-row items-center justify-space-around text-[color:var(--FOREGROUND)] lg:flex items-center justify-center text-[color:var(--FOREGROUND)]">
+                    <div
+                        class="w-[100%] lg:w-[450px] mx-[10px] my-[10px] flex items-center justify-center h-[70px] border transition-all duration-[0.2s] rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                        <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                            <p class="font-kalameh-medium">شماره کارشناس</p>
+                        </div>
+                        <div class="w-6/12 flex items-center pl-2.5 justify-end">
+                            <p>09397138757</p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[100%] lg:w-[450px] mx-[10px] my-[10px] flex items-center justify-center h-[70px] border transition-all duration-[0.2s] rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                        <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
+                            <i class="fa fa-inbox"></i>
+                        </div>
+                        <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                            <p class="font-kalameh-medium">ایمیل</p>
+                        </div>
+                        <div class="w-6/12 flex items-center pl-2.5 justify-end">
+                            rezaimani963@gmail.com
+                        </div>
+                    </div>
+                    <div
+                        class="w-[100%] lg:w-[450px] mx-[10px] my-[10px] flex items-center justify-center h-[70px] border transition-all duration-[0.2s] rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                        <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                        <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                            <p class="font-kalameh-medium">اینستاگرام</p>
+                        </div>
+                        <div class="w-6/12 flex items-center pl-2.5 justify-end">
+                            <p>@iamrezaimanii</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden fixed top-[110px] w-[100%] h-[400px] flex justify-center items-center my_menu">
+        <div class="w-[95%] h-[100%] bg-[#2B2E2F] p-[30px]">
+            <ul>
+                <a href="index.html">
+                    <li class="leading-[70px] text-xl text-[white] font-kalameh-medium">خانه</li>
+                </a>
+                <a href="about-us.html">
+                    <li class="leading-[70px] text-xl text-[white] font-kalameh-medium">درباره ما</li>
+                </a>
+                <a href="">
+                    <li class="leading-[70px] text-xl text-[white] font-kalameh-medium">تماس با ما</li>
+                </a>
+                <a href="information.html">
+                    <li class="leading-[70px] text-xl text-[white] font-kalameh-medium">اطلاعات مسابقات</li>
+                </a>
+            </ul>
+        </div>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="assets/js/script.js"></script>
+
 </html>

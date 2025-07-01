@@ -1,511 +1,739 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/icons/css/font-awesome.min.css">
+    <style>
+        :root {
+            --BACKGROUND: #131417;
+            --FOREGROUND: #ffffff;
+            --GREEN: #47cf73;
+        }
+
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+        .font-kalameh-medium {
+            font-family: kalameh-medium;
+        }
+    </style>
     <title>صفحه اصلی</title>
 </head>
 
-<body>
-    <div class="container">
-        <div class="container-col-1">
-            <img src="assets/images/logo/logo.png" alt="لوگوی سایت">
+<body class="bg-[color:var(--BACKGROUND)] m-0">
+    <div class="hidden lg:flex justify-center w-full items-start">
+        <div class="w-[10%] flex justify-center h-screen items-start">
+            <img class="w-2/5 mt-[32px];" src="assets/images/logo/logo.png" alt="لوگوی سایت">
         </div>
-        <div class="container-col-2">
-            <header>
-                <div class="header-col-1">
+        <div class="w-[90%] border-r-[rgba(255,255,255,0.288)] border-r border-solid">
+            <header class="flex items-center justify-center w-full h-fit p-10">
+                <div class="w-4/5 h-full">
                     <nav>
-                        <ul>
-                            <li><a href="#">خانه</a></li>
-                            <li><a href="#">درباره ما</a></li>
-                            <li><a href="#">تماس باما <i class="fa fa-angle-down"></i></a></li>
+                        <ul class="list-none mr-[60px] p-0">
+                            <li
+                                class="inline-block w-fit border-b-[color:var(--BACKGROUND)] transition-all duration-[0.2s] px-5 py-2.5 border-b border-solid hover:border-b-[color:var(--GREEN)] hover:border-b hover:border-solid">
+                                <a class="text-[color:var(--FOREGROUND)]" href="./index.html">خانه</a>
+                            </li>
+                            <li
+                                class="inline-block w-fit border-b-[color:var(--BACKGROUND)] transition-all duration-[0.2s] px-5 py-2.5 border-b border-solid hover:border-b-[color:var(--GREEN)] hover:border-b hover:border-solid">
+                                <a class="text-[color:var(--FOREGROUND)]" href="./about-us.html">درباره ما</a>
+                            </li>
+                            <li
+                                class="inline-block w-fit border-b-[color:var(--BACKGROUND)] transition-all duration-[0.2s] px-5 py-2.5 border-b border-solid hover:border-b-[color:var(--GREEN)] hover:border-b hover:border-solid">
+                                <a class="text-[color:var(--FOREGROUND)]" href="#">تماس باما <i
+                                        class="fa fa-angle-down"></i></a>
+                            </li>
+                            <li
+                                class="inline-block w-fit border-b-[color:var(--BACKGROUND)] transition-all duration-[0.2s] px-5 py-2.5 border-b border-solid hover:border-b-[color:var(--GREEN)] hover:border-b hover:border-solid">
+                                <a class="text-[color:var(--FOREGROUND)]" href="./information.html">اطلاعات مسابقه</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header-col-2">
-                    <button>ثبت نام / ورود</button>
+                <div class="w-1/5 flex items-center justify-center">
+                    <button
+                        class="font-kalameh-medium cursor-pointer w-[156px] h-[45.54px] text-[small] bg-[color:var(--GREEN)] shadow-[1px_1px_14px_1px_var(--GREEN)] rounded-[7px_20px_7px_20px] border-0">ثبت
+                        نام / ورود</button>
+                        
                 </div>
             </header>
-            <div class="content-container">
-                <div class="content-container-col-1">
-                    <h1>پنجمین دوره مسابقه برنامه نویسی آنلاین دانشگاه دولتی بجنورد &#x1F680;</h1>
-                    <h5>۱۲ الی ۲۰ اسفند ۱۴۰۰ به صورت غیر حضوری و آنلاین</h5>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+            <div class="flex items-center justify-center w-full pt-0 pb-[50px] px-[50px]">
+                <div class="w-6/12 px-10 py-0">
+                    <h1 class="font-kalameh-medium text-[color:var(--FOREGROUND)] leading-[70px] text-[40px]">پنجمین
+                        دوره مسابقه برنامه
+                        نویسی آنلاین دانشگاه دولتی بجنورد &#x1F680;</h1>
+                    <h5 class="text-[color:var(--FOREGROUND)] text-lg">۱۲ الی ۲۰ اسفند ۱۴۰۰ به صورت غیر حضوری و آنلاین
+                    </h5>
+                    <p class="font-kalameh-medium text-[color:var(--FOREGROUND)] text-[15px] leading-loose mb-[10px]">
+                        لورم ایپسوم متن ساختگی با تولید
+                        سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
                         چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
                         مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
                         درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
                         را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
 
-                    <button class="submit">ثبت نام کنید</button>
-                    <button class="watch"> <i class="fa fa-play"></i> مشاهده ویدئو</button>
+                    <button
+                        class="font-kalameh-medium cursor-pointer w-[156px] h-[45.54px] bg-transparent text-[color:var(--FOREGROUND)] border border-[color:var(--GREEN)] text-[small] shadow-[1px_1px_16px_1px_#47cf721e] rounded-[0px_20px_0px_20px] border-solid">ثبت
+                        نام کنید</button>
+                    <button
+                        class="cursor-pointer text-[small] w-fit h-7 bg-transparent text-[color:var(--FOREGROUND)] mr-2.5 border-0">
+                        <i
+                            class="fa fa-play text-[color:var(--BACKGROUND)] bg-[color:var(--GREEN)] p-2.5 rounded-[100%]"></i>
+                        مشاهده ویدئو</button>
 
-                    <div class="box">
+                    <div
+                        class="flex items-center justify-around mt-10 border-t-[rgba(255,255,255,0.242)] border-t border-solid">
                         <div>
-                            <p><img src="assets/images/icons/education.png" alt=""> ثبت نام کننده </p>
-                            <p>28</p>
+                            <p
+                                class="text-center flex items-center justify-around text-[color:var(--FOREGROUND)] text-[15px] leading-5">
+                                <img class="ml-[5px]" src="assets/images/icons/education.png" alt=""> ثبت نام کننده
+                            </p>
+                            <p
+                                class="text-center flex items-center justify-around text-[color:var(--FOREGROUND)] text-[15px] leading-5">
+                                28</p>
                         </div>
                         <div>
-                            <p><img src="assets/images/icons/work.png" alt=""> حامیان برنامه</p>
-                            <p>08</p>
+                            <p
+                                class="text-center flex items-center justify-around text-[color:var(--FOREGROUND)] text-[15px] leading-5">
+                                <img class="ml-[5px]" src="assets/images/icons/work.png" alt=""> حامیان برنامه
+                            </p>
+                            <p
+                                class="text-center flex items-center justify-around text-[color:var(--FOREGROUND)] text-[15px] leading-5">
+                                08</p>
                         </div>
                         <div>
-                            <p><img src="assets/images/icons/user.png" alt=""> برگزار کنندگان</p>
-                            <p>04</p>
+                            <p
+                                class="text-center flex items-center justify-around text-[color:var(--FOREGROUND)] text-[15px] leading-5">
+                                <img class="ml-[5px]" src="assets/images/icons/user.png" alt=""> برگزار کنندگان
+                            </p>
+                            <p
+                                class="text-center flex items-center justify-around text-[color:var(--FOREGROUND)] text-[15px] leading-5">
+                                04</p>
                         </div>
                     </div>
                 </div>
-                <div class="content-container-col-2">
-                    <img src="assets/images/banner/banner.png" class="banner" alt="مسابقات برنامه نویسی">
-                    <img src="assets/images/banner/code.png" class="code" alt="نمونه کد">
-                    <img src="assets/images/icons/c-plus-plus.png" class="c" alt="لوگوی زبان سی پلاس پلاس">
+                <div class="flex items-center justify-center w-6/12 relative">
+                    <img src="assets/images/banner/banner.png" class="w-[300px]" alt="مسابقات برنامه نویسی">
+                    <img src="assets/images/banner/code.png" class="w-[300px] absolute -mb-10 right-0 bottom-0"
+                        alt="نمونه کد">
+                    <img src="assets/images/icons/c-plus-plus.png"
+                        class="w-20 absolute mr-[-30px] right-0 bottom-[50px]" alt="لوگوی زبان سی پلاس پلاس">
                 </div>
             </div>
-            <div class="sponser-container">
-                <img src="assets/images/banner/sponser.png" alt="">
+            <div class="flex items-center justify-center relative">
+                <img class="w-full" src="assets/images/banner/sponser.png" alt="">
             </div>
-            <div class="path-container">
-                <div class="path-container-child">
-                    <div class="path-box">
-                        <img src="assets/images/banner/path.png" alt="">
-                        <p class="path-title">نحوه برگزاری مسابقه</p>
-                        <p class="path-1">پاسخ به سوال</p>
-                        <p class="path-2">ثبت نام</p>
-                        <p class="path-3">افتتاحیه و مرحله مقدماتی</p>
-                        <p class="path-4">مرحله نهایی</p>
-                        <p class="path-5">مرحله انتخاب نفر اول</p>
-                        <p class="path-6">اختتامیه</p>
+            <div class="w-full flex items-center justify-center p-0">
+                <div class="w-[1200px] flex items-center justify-center relative p-0">
+                    <div class="w-3/5 flex items-center justify-center relative">
+                        <img class="w-[1200px]" src="assets/images/banner/path.png" alt="">
+                        <p class="text-[color:var(--FOREGROUND)] absolute cursor-pointer right-10 top-10">نحوه برگزاری
+                            مسابقه</p>
+                        <p class="text-[color:var(--FOREGROUND)] absolute cursor-pointer left-0 top-[170px]">پاسخ به
+                            سوال</p>
+                        <p class="text-[color:var(--FOREGROUND)] absolute cursor-pointer left-[310px] top-[180px]">ثبت
+                            نام</p>
+                        <p class="text-[color:var(--FOREGROUND)] absolute cursor-pointer -left-5 top-[380px]">افتتاحیه و
+                            مرحله مقدماتی</p>
+                        <p class="text-[color:var(--FOREGROUND)] absolute cursor-pointer right-[120px] top-[270px]">
+                            مرحله نهایی</p>
+                        <p class="text-[color:var(--FOREGROUND)] absolute cursor-pointer left-[140px] top-[525px]">مرحله
+                            انتخاب نفر اول</p>
+                        <p class="text-[color:var(--FOREGROUND)] absolute cursor-pointer -right-10 top-[485px]">اختتامیه
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="information-container">
+            <div class="flex items-center justify-center w-full">
                 <img src="assets/images/banner/information.png" alt="">
             </div>
-            <div class="gallery-container">
-                <div class="gallery-container-child">
-                    <p class="gallery-title">گالری تصاویر</p>
-                    <div>
-                        <span>
-                            <span class="back-d"></span>
+            <!-- gallery container -->
+            <div class="w-full flex items-center justify-center">
+                <div class="w-[1100px] px-[60px] py-5">
+                    <p class="text-[32] text-[color:var(--FOREGROUND)] mb-[50px]">گالری تصاویر</p>
+                    <div class="flex items-center justify-center w-full">
+                        <span
+                            class="group relative w-[300px] flex items-center justify-center transition-all duration-[0.2s]">
+                            <span
+                                class="w-full h-full transition-all duration-[0.2s] bg-[rgba(0,0,0,0.626)] opacity-0 absolute group-hover:opacity-100"></span>
                             <img src="assets/images/gallery/gallery-1.png" alt="تصویر اول گالری تصاویر">
-                            <img class="plus" src="assets/images/icons/plus.png" alt="">
+                            <img class="absolute opacity-0 w-0 transition-all duration-[0.2s] cursor-pointer group-hover:opacity-100 w-10"
+                                src="assets/images/icons/plus.png" alt="">
                         </span>
-                        <span>
-                            <span class="back-d"></span>
+                        <span
+                            class="group relative w-[300px] flex items-center justify-center transition-all duration-[0.2s]">
+                            <span
+                                class="w-full h-full transition-all duration-[0.2s] bg-[rgba(0,0,0,0.626)] opacity-0 absolute group-hover:opacity-100"></span>
                             <img src="assets/images/gallery/gallery-2.png" alt="تصویر دوم گالری تصاویر">
-                            <img class="plus" src="assets/images/icons/plus.png" alt="">
+                            <img class="absolute opacity-0 w-0 transition-all duration-[0.2s] cursor-pointer group-hover:opacity-100 w-10"
+                                src="assets/images/icons/plus.png" alt="">
                         </span>
-                        <span>
-                            <span class="back-d"></span>
+                        <span
+                            class="group relative w-[300px] flex items-center justify-center transition-all duration-[0.2s]">
+                            <span
+                                class="w-full h-full transition-all duration-[0.2s] bg-[rgba(0,0,0,0.626)] opacity-0 absolute group-hover:opacity-100"></span>
                             <img src="assets/images/gallery/gallery-3.png" alt="تصویر سوم گالری تصاویر">
-                            <img class="plus" src="assets/images/icons/plus.png" alt="">
+                            <img class="absolute opacity-0 w-0 transition-all duration-[0.2s] cursor-pointer group-hover:opacity-100 w-10"
+                                src="assets/images/icons/plus.png" alt="">
                         </span>
-                        <span>
-                            <span class="back-d"></span>
+                        <span
+                            class="group relative w-[300px] flex items-center justify-center transition-all duration-[0.2s]">
+                            <span
+                                class="w-full h-full transition-all duration-[0.2s] bg-[rgba(0,0,0,0.626)] opacity-0 absolute group-hover:opacity-100"></span>
                             <img src="assets/images/gallery/gallery-4.png" alt="تصویر چهارم گالری تصاویر">
-                            <img class="plus" src="assets/images/icons/plus.png" alt="">
+                            <img class="absolute opacity-0 w-0 transition-all duration-[0.2s] cursor-pointer group-hover:opacity-100 w-10"
+                                src="assets/images/icons/plus.png" alt="">
                         </span>
                     </div>
-                    <div>
-                        <span>
-                            <span class="back-d"></span>
+                    <div class="flex items-center justify-center w-full">
+                        <span
+                            class="group relative w-[300px] flex items-center justify-center transition-all duration-[0.2s]">
+                            <span
+                                class="w-full h-full transition-all duration-[0.2s] bg-[rgba(0,0,0,0.626)] opacity-0 absolute group-hover:opacity-100"></span>
                             <img src="assets/images/gallery/gallery-5.png" alt="تصویر پنجم گالری تصاویر">
-                            <img class="plus" src="assets/images/icons/plus.png" alt="">
+                            <img class="absolute opacity-0 w-0 transition-all duration-[0.2s] cursor-pointer group-hover:opacity-100 w-10"
+                                src="assets/images/icons/plus.png" alt="">
                         </span>
-                        <span>
-                            <span class="back-d"></span>
+                        <span
+                            class="group relative w-[300px] flex items-center justify-center transition-all duration-[0.2s]">
+                            <span
+                                class="w-full h-full transition-all duration-[0.2s] bg-[rgba(0,0,0,0.626)] opacity-0 absolute group-hover:opacity-100"></span>
                             <img src="assets/images/gallery/gallery-6.png" alt="تصویر ششم گالری تصاویر">
-                            <img class="plus" src="assets/images/icons/plus.png" alt="">
+                            <img class="absolute opacity-0 w-0 transition-all duration-[0.2s] cursor-pointer group-hover:opacity-100 w-10"
+                                src="assets/images/icons/plus.png" alt="">
                         </span>
-                        <span>
-                            <span class="back-d"></span>
+                        <span
+                            class="group relative w-[300px] flex items-center justify-center transition-all duration-[0.2s]">
+                            <span
+                                class="w-full h-full transition-all duration-[0.2s] bg-[rgba(0,0,0,0.626)] opacity-0 absolute group-hover:opacity-100"></span>
                             <img src="assets/images/gallery/gallery-7.png" alt="تصویر هفتم گالری تصاویر">
-                            <img class="plus" src="assets/images/icons/plus.png" alt="">
+                            <img class="absolute opacity-0 w-0 transition-all duration-[0.2s] cursor-pointer group-hover:opacity-100 w-10"
+                                src="assets/images/icons/plus.png" alt="">
                         </span>
-                        <span>
-                            <span class="back-d"></span>
+                        <span
+                            class="group relative w-[300px] flex items-center justify-center transition-all duration-[0.2s]">
+                            <span
+                                class="w-full h-full transition-all duration-[0.2s] bg-[rgba(0,0,0,0.626)] opacity-0 absolute group-hover:opacity-100"></span>
                             <img src="assets/images/gallery/gallery-8.png" alt="تصویر هشتم گالری تصاویر">
-                            <img class="plus" src="assets/images/icons/plus.png" alt="">
+                            <img class="absolute opacity-0 w-0 transition-all duration-[0.2s] cursor-pointer group-hover:opacity-100 w-10"
+                                src="assets/images/icons/plus.png" alt="">
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="team-container">
-                <div class="team-container-child">
-                    <p class="team-title">تیم ما</p>
-                    <div>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-1.png" alt="نفر اول تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
+            <!-- team-container -->
+            <div class="w-full flex items-center justify-center">
+                <div class="w-[1100px] px-[60px] py-5">
+                    <p class="text-[32] text-[color:var(--FOREGROUND)] mb-[50px]">تیم ما</p>
+                    <div class="flex items-center justify-center w-full">
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-1.png" alt="نفر اول تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
                             </span>
-                            <span class="sp-child-2">
-                                <p>رضا ایمانی</p>
-                                <p>رهبر تیم</p>
-                            </span>
-                        </span>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-2.png" alt="نفر دوم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
-                            </span>
-                            <span class="sp-child-2">
-                                <p>حامد جعفری</p>
-                                <p>توسعه دهنده تازه کار</p>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">رضا ایمانی</p>
+                                <p class="font-kalameh-medium">رهبر تیم</p>
                             </span>
                         </span>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-3.png" alt="نفر سوم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-2.png" alt="نفر دوم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
                             </span>
-                            <span class="sp-child-2">
-                                <p>میلاد احمدی</p>
-                                <p>طراح رابط کاربری </p>
-                            </span>
-                        </span>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-1.png" alt="نفر چهارم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
-                            </span>
-                            <span class="sp-child-2">
-                                <p>محسن محمدی</p>
-                                <p>متخصص استایلینگ</p>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">حامد جعفری</p>
+                                <p class="font-kalameh-medium">توسعه دهنده تازه کار</p>
                             </span>
                         </span>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-2.png" alt="نفر پنجم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-3.png" alt="نفر سوم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
                             </span>
-                            <span class="sp-child-2">
-                                <p>نیما رضایی</p>
-                                <p>مسئول بهینه سازی</p>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">میلاد احمدی</p>
+                                <p class="font-kalameh-medium">طراح رابط کاربری </p>
+                            </span>
+                        </span>
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-1.png" alt="نفر چهارم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
+                            </span>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">محسن محمدی</p>
+                                <p class="font-kalameh-medium">متخصص استایلینگ</p>
+                            </span>
+                        </span>
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-2.png" alt="نفر پنجم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
+                            </span>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">نیما رضایی</p>
+                                <p class="font-kalameh-medium">مسئول بهینه سازی</p>
                             </span>
                         </span>
                     </div>
-                    <div>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-1.png" alt="نفر ششم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
+                    <div class="flex items-center justify-center w-full">
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-1.png" alt="نفر ششم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
                             </span>
-                            <span class="sp-child-2">
-                                <p>شاهرخ ایمانی</p>
-                                <p>مسئول تست رابط کاربری</p>
-                            </span>
-                        </span>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-2.png" alt="نفر هفتم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
-                            </span>
-                            <span class="sp-child-2">
-                                <p>کیان نادری</p>
-                                <p>توسعه دهنده ارشد</p>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">شاهرخ ایمانی</p>
+                                <p class="font-kalameh-medium">مسئول تست رابط کاربری</p>
                             </span>
                         </span>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-3.png" alt="نفر هشتم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-2.png" alt="نفر هفتم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
                             </span>
-                            <span class="sp-child-2">
-                                <p>حمید صمدی</p>
-                                <p>متخصص توسعه کامپوننت</p>
-                            </span>
-                        </span>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-1.png" alt="نفر نهم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
-                            </span>
-                            <span class="sp-child-2">
-                                <p>سعید آقایی</p>
-                                <p>توسعه دهنده ارشد</p>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">کیان نادری</p>
+                                <p class="font-kalameh-medium">توسعه دهنده ارشد</p>
                             </span>
                         </span>
-                        <span>
-                            <span class="back-d"></span>
-                            <img src="assets/images/team/team-2.png" alt="نفر دهم تیم ما">
-                            <span class="sp-child-1">
-                                <i class="fa fa-linkedin-square"></i>
-                                <i class="fa fa-telegram"></i>
-                                <i class="fa fa-instagram"></i>
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-3.png" alt="نفر هشتم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
                             </span>
-                            <span class="sp-child-2">
-                                <p>فرهاد کیانی</p>
-                                <p>توسعه دهنده تازه کار</p>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">حمید صمدی</p>
+                                <p class="font-kalameh-medium">متخصص توسعه کامپوننت</p>
+                            </span>
+                        </span>
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-1.png" alt="نفر نهم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
+                            </span>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">سعید آقایی</p>
+                                <p class="font-kalameh-medium">توسعه دهنده ارشد</p>
+                            </span>
+                        </span>
+                        <span
+                            class="group w-[250px] transition-all duration-[0.2s] relative flex items-center justify-center m-2.5">
+                            <span
+                                class="w-full h-full bg-[rgba(0,0,0,0.457)] opacity-0 transition-all duration-[0.2s] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100"></span>
+                            <img class="w-full" src="assets/images/team/team-2.png" alt="نفر دهم تیم ما">
+                            <span
+                                class="text-[x-large] w-4/5 flex items-center justify-around top-[110px] absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                                <i class="fa fa-telegram cursor-pointer"></i>
+                                <i class="fa fa-instagram cursor-pointer"></i>
+                            </span>
+                            <span
+                                class="leading-[10px] text-center text-lg bottom-5 absolute text-[color:var(--FOREGROUND)] opacity-0 transition-all duration-[0.2s] group-hover:opacity-100">
+                                <p class="text-2xl font-kalameh-medium leading-loose">فرهاد کیانی</p>
+                                <p class="font-kalameh-medium">توسعه دهنده تازه کار</p>
                             </span>
                         </span>
 
                     </div>
                 </div>
             </div>
-            <div class="contact-container">
-                <div class="contact-container-child">
-                    <p class="contact-title">تماس باما</p>
-                    <div class="contact-box">
-                        <div class="contact-item">
-                            <div class="icon">
+            <!-- contact-container -->
+            <div class="w-full flex items-center justify-center">
+                <div class="w-[1100px] px-[60px] py-5">
+                    <p class="text-[32] text-[color:var(--FOREGROUND)] mb-[50px] font-kalameh-medium">تماس باما</p>
+                    <div class="w-full flex items-center justify-center text-[color:var(--FOREGROUND)]">
+                        <div
+                            class="flex items-center justify-center w-[450px] h-[70px] border transition-all duration-[0.2s] mx-5 my-0 rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                            <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
                                 <i class="fa fa-phone"></i>
                             </div>
-                            <div class="key">
-                                <p>شماره کارشناس</p>
+                            <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                                <p class="font-kalameh-medium">شماره کارشناس</p>
                             </div>
-                            <div class="value">
+                            <div class="w-6/12 flex items-center pl-2.5 justify-end">
                                 <p>09397138757</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="icon">
+                        <div
+                            class="flex items-center justify-center w-[450px] h-[70px] border transition-all duration-[0.2s] mx-5 my-0 rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                            <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
                                 <i class="fa fa-inbox"></i>
                             </div>
-                            <div class="key">
-                                <p>ایمیل</p>
+                            <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                                <p class="font-kalameh-medium">ایمیل</p>
                             </div>
-                            <div class="value">
+                            <div class="w-6/12 flex items-center pl-2.5 justify-end">
                                 rezaimani963@gmail.com
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="icon">
+                        <div
+                            class="flex items-center justify-center w-[450px] h-[70px] border transition-all duration-[0.2s] mx-5 my-0 rounded-[7px] border-solid border-[rgba(255,255,255,0.242)] hover:border hover:border-[color:var(--GREEN)] hover:bg-[color:var(--GREEN)] hover:text-[color:var(--FOREGROUND)] hover:border-solid">
+                            <div class="w-[15%] flex items-center justify-center cursor-pointer text-[large]">
                                 <i class="fa fa-instagram"></i>
                             </div>
-                            <div class="key">
-                                <p>اینستاگرام</p>
+                            <div class="w-[35%] flex items-center pr-2.5 justify-start">
+                                <p class="font-kalameh-medium">اینستاگرام</p>
                             </div>
-                            <div class="value">
+                            <div class="w-6/12 flex items-center pl-2.5 justify-end">
                                 <p>@iamrezaimanii</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer>
+            <footer class="flex items-center justify-center text-[color:var(--FOREGROUND)] mx-0 my-[60px]">
                 <p>تمام حقوق برای تیم پارشوماش محفوظ است</p>
             </footer>
         </div>
-        <img class="background" src="assets/images/banner/background.png" alt="">
+        <img class="absolute w-[800px] -z-10 left-0 top-0" src="assets/images/banner/background.png" alt="">
     </div>
-    <div class="mobile-container">
-        <div class="mobile-header">
-            <i class="fa fa-bars"></i>
+    <!-- ////----////----////----////----////----////----////----////----////----////----////----////----//// -->
+    <!-- ----////----////----////----////----////----////----////----////----////----////----////----////---- -->
+    <!-- ////----////----////----////----////----////----////----////----////----////----////----////----//// -->
+    <!-- ----////----////----////----////----////----////----////----////----////----////----////----////---- -->
+    <div class="overflow-hidden lg:hidden">
+        <div class="w-full flex justify-between items-center h-[100px] pt-[30px] pb-0 px-10">
+            <i class="fa fa-bars text-[color:var(--FOREGROUND)] !text-3xl my_menu_icon"></i>
             <img src="assets/images/logo/mobile-logo.png" alt="رویداد برنامه نویسی">
-            <button>ثبت نام / ورود</button>
+            <button class="text-[color:var(--GREEN)] bg-transparent text-[medium] border-0 font-kalameh-medium">ثبت نام / ورود</button>
         </div>
-        <div class="mobile-body">
-            <h1>پنجمین دوره مسابقه برنامه نویسی آنلاین دانشگاه دولتی بجنورد &#x1F680;</h1>
-            <h5>۱۲ الی ۲۰ اسفند ۱۴۰۰ به صورت غیر حضوری و آنلاین</h5>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+        <div class="px-10 py-0">
+            <h1 class="font-kalameh-medium text-[color:var(--FOREGROUND)] leading-[150%] text-[28px]">پنجمین دوره مسابقه
+                برنامه نویسی آنلاین
+                دانشگاه دولتی بجنورد &#x1F680;</h1>
+            <h5 class="text-[color:var(--FOREGROUND)] text-lg">۱۲ الی ۲۰ اسفند ۱۴۰۰ به صورت غیر حضوری و آنلاین</h5>
+            <p class="font-kalameh-medium text-[color:var(--FOREGROUND)] text-[15px]  leading-loose">لورم ایپسوم متن
+                ساختگی با تولید سادگی
+                نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
                 چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
                 مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
                 درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
                 را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
 
-            <button class="submit">ثبت نام کنید</button>
-            <button class="watch"> <i class="fa fa-play"></i> مشاهده ویدئو</button>
+            <button
+                class="cursor-pointer w-[156px] h-[45.54px] bg-transparent text-[color:var(--FOREGROUND)] border border-[color:var(--GREEN)] text-[small] shadow-[1px_1px_16px_1px_#47cf721e] rounded-[0px_20px_0px_20px] border-solid font-kalameh-medium mt-[10px]">ثبت
+                نام کنید</button>
+            <button
+                class=" font-kalameh-medium mt-[10px] cursor-pointer text-[small] w-fit h-7 bg-transparent text-[color:var(--FOREGROUND)] mr-2.5 border-0">
+                <i class="fa fa-play text-[color:var(--BACKGROUND)] bg-[color:var(--GREEN)] p-2.5 rounded-[100%]"></i>
+                مشاهده ویدئو</button>
         </div>
-        <div class="mobile-box">
+        <div
+            class="flex items-center justify-around mt-10 border-y-[rgba(255,255,255,0.242)] border-t border-solid border-b">
             <div>
-                <p><img src="assets/images/icons/education.png" alt=""> ثبت نام کننده </p>
-                <p>28</p>
+                <p
+                    class="text-[color:var(--FOREGROUND)] text-[15px] leading-5 text-center flex items-center justify-around">
+                    <img class="ml-[5px]" src="assets/images/icons/education.png" alt=""> ثبت نام کننده
+                </p>
+                <p
+                    class="text-[color:var(--FOREGROUND)] text-[15px] leading-5 text-center flex items-center justify-around">
+                    28</p>
             </div>
             <div>
-                <p><img src="assets/images/icons/work.png" alt=""> حامیان برنامه</p>
-                <p>08</p>
+                <p
+                    class="text-[color:var(--FOREGROUND)] text-[15px] leading-5 text-center flex items-center justify-around">
+                    <img class="ml-[5px]" src="assets/images/icons/work.png" alt=""> حامیان برنامه
+                </p>
+                <p
+                    class="text-[color:var(--FOREGROUND)] text-[15px] leading-5 text-center flex items-center justify-around">
+                    08</p>
             </div>
             <div>
-                <p><img src="assets/images/icons/user.png" alt=""> برگزار کنندگان</p>
-                <p>04</p>
+                <p
+                    class="text-[color:var(--FOREGROUND)] text-[15px] leading-5 text-center flex items-center justify-around">
+                    <img class="ml-[5px]" src="assets/images/icons/user.png" alt=""> برگزار کنندگان
+                </p>
+                <p
+                    class="text-[color:var(--FOREGROUND)] text-[15px] leading-5 text-center flex items-center justify-around">
+                    04</p>
             </div>
         </div>
         <br>
-        <div class="mobile-sponser">
-            <img src="assets/images/banner/sponser.png" alt="اسپانسر های مسابقه">
+        <div class="w-full">
+            <img class="w-full" src="assets/images/banner/sponser.png" alt="اسپانسر های مسابقه">
         </div>
-        <div class="mobile-path-container">
-            <img src="assets/images/banner/mobile-left-line.png" class="left-line-path" alt="">
-            <img src="assets/images/banner/mobile-right-line.png" class="right-line-path" alt="">
-            <div class="mobile-path-container-child">
+        <div class="relative w-full flex items-center justify-center">
+            <div class="h-[690px] w-[426px] flex items-center justify-center relative">
                 <img src="assets/images/banner/mobile-path.png" alt="">
 
-                <p class="mobile-path-title">نحوه برگزاری مسابقه</p>
-                <p class="mobile-path-1">پاسخ به سوال</p>
-                <p class="mobile-path-2">ثبت نام</p>
-                <p class="mobile-path-3">افتتاحیه و مرحله مقدماتی</p>
-                <p class="mobile-path-4">مرحله نهایی</p>
-                <p class="mobile-path-5">مرحله انتخاب نفر اول</p>
-                <p class="mobile-path-6">اختتامیه</p>
-                <button class="mobile-path-submit">ثبت نام</button>
+                <p
+                    class="font-kalameh-medium text-[color:var(--FOREGROUND)] absolute cursor-pointer right-[5px] top-10">
+                    نحوه برگزاری مسابقه
+                </p>
+                <p
+                    class="font-kalameh-medium text-[color:var(--FOREGROUND)] absolute cursor-pointer left-[90px] top-[154px]">
+                    پاسخ به سوال
+                </p>
+                <p
+                    class="font-kalameh-medium text-[color:var(--FOREGROUND)] absolute cursor-pointer left-[248px] top-[217px]">
+                    ثبت نام</p>
+                <p
+                    class="font-kalameh-medium text-[color:var(--FOREGROUND)] absolute cursor-pointer left-3 top-[286px]">
+                    افتتاحیه و مرحله
+                    مقدماتی</p>
+                <p
+                    class="font-kalameh-medium text-[color:var(--FOREGROUND)] absolute cursor-pointer right-[97px] top-[351px]">
+                    مرحله نهایی
+                </p>
+                <p
+                    class="font-kalameh-medium text-[color:var(--FOREGROUND)] absolute cursor-pointer left-11 top-[414px]">
+                    مرحله انتخاب نفر
+                    اول</p>
+                <p
+                    class="font-kalameh-medium text-[color:var(--FOREGROUND)] absolute cursor-pointer right-[118px] top-[484px]">
+                    اختتامیه</p>
+                <button
+                    class="font-kalameh-medium cursor-pointer w-[156px] h-[45.54px] text-[small] bg-[color:var(--GREEN)] shadow-[1px_1px_14px_1px_var(--GREEN)] absolute rounded-[7px_20px_7px_20px] border-0 bottom-[70px]">ثبت
+                    نام</button>
             </div>
         </div>
-        <div class="mobile-information-container">
-            <div class="mobile-information-title-container">
-                <p class="mobile-information-title">نحوه برگذاری مسابقه</p>
+        <!-- mico -->
+        <div class="flex items-center justify-center flex-col">
+            <div class="w-[421px]">
+                <p class="text-[color:var(--FOREGROUND)] pr-[5px]">نحوه برگذاری مسابقه</p>
             </div>
-            <div class="col-1">
-                <div class="child">
+            <!-- col-1 -->
+            <div class="z-[1000] flex items-center justify-center w-full">
+                <div
+                    class="flex items-center flex-col h-[250px] border border-[color:var(--FOREGROUND)] bg-[#FFFFFF1C] w-[30%] justify-center text-[color:var(--FOREGROUND)] m-[5px] rounded-[7px] border-solid">
                     <img src="assets/images/icons/mobile-information-icon-3.png" alt="">
-                    <p>جوایز مسابقه</p>
+                    <p class="font-kalameh-medium">جوایز مسابقه</p>
                     <br><br>
-                    <button class="more-info">بیشتر</button>
+                    <button
+                        class="text-[color:var(--FOREGROUND)] border-[color:var(--FOREGROUND)] bg-transparent w-[100px] rounded-md border-2 border-solid">بیشتر</button>
                 </div>
-                <div class="child">
+                <div
+                    class="flex items-center flex-col h-[250px] border border-[color:var(--FOREGROUND)] bg-[#FFFFFF1C] w-[30%] justify-center text-[color:var(--FOREGROUND)] m-[5px] rounded-[7px] border-solid">
                     <img src="assets/images/icons/mobile-information-icon-2.png" alt="">
-                    <p>اهداف رویداد</p>
+                    <p class="font-kalameh-medium">اهداف رویداد</p>
                     <br><br>
-                    <button class="more-info">بیشتر</button>
+                    <button
+                        class="text-[color:var(--FOREGROUND)] border-[color:var(--FOREGROUND)] bg-transparent w-[100px] rounded-md border-2 border-solid">بیشتر</button>
                 </div>
-                <div class="child">
+                <div
+                    class="flex items-center flex-col h-[250px] border border-[color:var(--FOREGROUND)] bg-[#FFFFFF1C] w-[30%] justify-center text-[color:var(--FOREGROUND)] m-[5px] rounded-[7px] border-solid">
                     <img src="assets/images/icons/mobile-information-icon-1.png" alt="">
-                    <p>قوانین مسابقه</p>
+                    <p class="font-kalameh-medium">قوانین مسابقه</p>
                     <br><br>
-                    <button class="more-info">بیشتر</button>
+                    <button
+                        class="text-[color:var(--FOREGROUND)] border-[color:var(--FOREGROUND)] bg-transparent w-[100px] rounded-md border-2 border-solid">بیشتر</button>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="child-1">
+            <!-- col-2 -->
+            <div class="z-[1000] flex items-center justify-center w-full">
+                <div
+                    class="flex items-center flex-col h-[250px] border border-[color:var(--FOREGROUND)] bg-[#FFFFFF1C] w-[30%] justify-center text-[color:var(--FOREGROUND)] m-[5px] rounded-[7px] border-solid">
                     <img src="assets/images/icons/mobile-information-icon-3.png" alt="">
-                    <p>مزایای شرکت در مسابقه</p>
+                    <p class="font-kalameh-medium">مزایای شرکت در مسابقه</p>
                     <br><br>
-                    <button class="more-info">بیشتر</button>
+                    <button
+                        class="text-[color:var(--FOREGROUND)] border-[color:var(--FOREGROUND)] bg-transparent w-[100px] rounded-md border-2 border-solid">بیشتر</button>
                 </div>
-                <div class="child-2">
-                    <h4>&#9996; همین حالا شروع کن!</h4>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان </p>
+                <div
+                    class="h-[250px] border border-[color:var(--FOREGROUND)] bg-[#FFFFFF1C] w-[62%] justify-center text-[color:var(--FOREGROUND)] m-[5px] px-5 py-0 rounded-[7px] border-solid">
+                    <h4 class="font-kalameh-medium mt-[17px]">&#9996; همین حالا شروع کن!</h4>
+                    <p class="font-kalameh-medium">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                        استفاده از طراحان </p>
                     <br><br>
-                    <span><button class="submit-info">ثبت نام</button></span>
+                    <span class="w-full flex items-center justify-end"><button
+                            class="text-[color:var(--FOREGROUND)] border-[color:var(--FOREGROUND)] bg-transparent w-[100px] rounded-md border-2 border-solid">ثبت
+                            نام</button></span>
                 </div>
             </div>
         </div>
-        <div class="mobile-gallery-container">
-            <div class="mobile-gallery-title-container">
-                <p class="mobile-gallery-title">گالری تصاویر</p>
+        <!-- mgco -->
+        <div class="flex items-center justify-center flex-col">
+            <div class="w-[421px]">
+                <p class="font-kalameh-medium text-[color:var(--FOREGROUND)] pr-[5px]">گالری تصاویر</p>
             </div>
-            <div class="gallery-col">
-                <div class="gallery-child">
-                    <img src="assets/images/gallery/gallery-1.png" alt="">
-                    <img src="assets/images/gallery/gallery-2.png" alt="">
+            <div class="flex items-center justify-center flex-col">
+                <div class="flex items-center justify-center">
+                    <img class="w-[220px]" src="assets/images/gallery/gallery-1.png" alt="">
+                    <img class="w-[220px]" src="assets/images/gallery/gallery-2.png" alt="">
                 </div>
-                <div class="gallery-child">
-                    <img src="assets/images/gallery/gallery-3.png" alt="">
-                    <img src="assets/images/gallery/gallery-4.png" alt="">
+                <div class="flex items-center justify-center">
+                    <img class="w-[220px]" src="assets/images/gallery/gallery-3.png" alt="">
+                    <img class="w-[220px]" src="assets/images/gallery/gallery-4.png" alt="">
                 </div>
-                <div class="gallery-child">
-                    <img src="assets/images/gallery/gallery-5.png" alt="">
-                    <img src="assets/images/gallery/gallery-6.png" alt="">
+                <div class="flex items-center justify-center">
+                    <img class="w-[220px]" src="assets/images/gallery/gallery-5.png" alt="">
+                    <img class="w-[220px]" src="assets/images/gallery/gallery-6.png" alt="">
                 </div>
-                <div class="gallery-child">
-                    <img src="assets/images/gallery/gallery-7.png" alt="">
-                    <img src="assets/images/gallery/gallery-8.png" alt="">
+                <div class="flex items-center justify-center">
+                    <img class="w-[220px]" src="assets/images/gallery/gallery-7.png" alt="">
+                    <img class="w-[220px]" src="assets/images/gallery/gallery-8.png" alt="">
                 </div>
             </div>
         </div>
         <br>
-        <div class="mobile-team-container">
-            <div class="mobile-team-title-container">
-                <p class="mobile-team-title">تیم ما</p>
+        <!-- mtco -->
+        <div class="flex items-center justify-center flex-col">
+            <div class="w-[421px]">
+                <p class="font-kalameh-medium text-[color:var(--FOREGROUND)] pr-[5px]">تیم ما</p>
             </div>
-            <div class="mobile-team-row-1">
-                <div class="mobile-team-child">
-                    <img src="assets/images/team/mobile-team-4.png" alt="دکتر کیانی طراح سوالات">
-                    <h3>دکتر کیانی</h3>
-                    <p>طراح سوالات</p>
+            <div class="flex justify-between w-[500px]">
+                <div class="w-[44%] flex items-center justify-center flex-col">
+                    <img class="w-full" src="assets/images/team/mobile-team-4.png" alt="دکتر کیانی طراح سوالات">
+                    <h3 class="font-kalameh-medium text-[color:var(--FOREGROUND)]">دکتر کیانی</h3>
+                    <p class="font-kalameh-medium text-[color:var(--FOREGROUND)]">طراح سوالات</p>
                     <br>
-                    <div class="social-networks">
-                        <i class="fa fa-linkedin-square"></i>
-                        <i class="fa fa-telegram"></i>
-                        <i class="fa fa-instagram"></i>
+                    <div class="w-[70%] items-center justify-around flex">
+                        <i class="fa fa-linkedin-square text-[color:var(--FOREGROUND)] text-[x-large]"></i>
+                        <i class="fa fa-telegram text-[color:var(--FOREGROUND)] text-[x-large]"></i>
+                        <i class="fa fa-instagram text-[color:var(--FOREGROUND)] text-[x-large]"></i>
                     </div>
                 </div>
-                <div class="mobile-team-child">
-                    <img src="assets/images/team/mobile-team-4.png" alt="دکتر کیانی طراح سوالات">
-                    <h3>دکتر کیانی</h3>
-                    <p>طراح سوالات</p>
+                <div class="w-[44%] flex items-center justify-center flex-col">
+                    <img class="w-full" src="assets/images/team/mobile-team-4.png" alt="دکتر کیانی طراح سوالات">
+                    <h3 class="font-kalameh-medium text-[color:var(--FOREGROUND)]">دکتر کیانی</h3>
+                    <p class="font-kalameh-medium text-[color:var(--FOREGROUND)]">طراح سوالات</p>
                     <br>
-                    <div class="social-networks">
-                        <i class="fa fa-linkedin-square"></i>
-                        <i class="fa fa-telegram"></i>
-                        <i class="fa fa-instagram"></i>
+                    <div class="w-[70%] items-center justify-around flex">
+                        <i class="fa fa-linkedin-square text-[color:var(--FOREGROUND)] text-[x-large]"></i>
+                        <i class="fa fa-telegram text-[color:var(--FOREGROUND)] text-[x-large]"></i>
+                        <i class="fa fa-instagram text-[color:var(--FOREGROUND)] text-[x-large]"></i>
                     </div>
                 </div>
             </div>
             <br><br>
-            <div class="mobile-team-row-2">
-                <div class="mobile-team-child">
-                    <img src="assets/images/team/mobile-team-4.png" alt="دکتر کیانی طراح سوالات">
-                    <h3>دکتر کیانی</h3>
-                    <p>طراح سوالات</p>
+            <div class="flex justify-between w-[500px]">
+                <div class="w-[44%] flex items-center justify-center flex-col">
+                    <img class="w-full" src="assets/images/team/mobile-team-4.png" alt="دکتر کیانی طراح سوالات">
+                    <h3 class="font-kalameh-medium text-[color:var(--FOREGROUND)]">دکتر کیانی</h3>
+                    <p class="font-kalameh-medium text-[color:var(--FOREGROUND)]">طراح سوالات</p>
                     <br>
-                    <div class="social-networks">
-                        <i class="fa fa-linkedin-square"></i>
-                        <i class="fa fa-telegram"></i>
-                        <i class="fa fa-instagram"></i>
+                    <div class="w-[70%] items-center justify-around flex">
+                        <i class="fa fa-linkedin-square text-[color:var(--FOREGROUND)] text-[x-large]"></i>
+                        <i class="fa fa-telegram text-[color:var(--FOREGROUND)] text-[x-large]"></i>
+                        <i class="fa fa-instagram text-[color:var(--FOREGROUND)] text-[x-large]"></i>
                     </div>
                 </div>
-                <div class="mobile-team-child">
-                    <img src="assets/images/team/mobile-team-4.png" alt="دکتر کیانی طراح سوالات">
-                    <h3>دکتر کیانی</h3>
-                    <p>طراح سوالات</p>
+                <div class="w-[44%] flex items-center justify-center flex-col">
+                    <img class="w-full" src="assets/images/team/mobile-team-4.png" alt="دکتر کیانی طراح سوالات">
+                    <h3 class="font-kalameh-medium text-[color:var(--FOREGROUND)]">دکتر کیانی</h3>
+                    <p class="font-kalameh-medium text-[color:var(--FOREGROUND)]">طراح سوالات</p>
                     <br>
-                    <div class="social-networks">
-                        <i class="fa fa-linkedin-square"></i>
-                        <i class="fa fa-telegram"></i>
-                        <i class="fa fa-instagram"></i>
+                    <div class="w-[70%] items-center justify-around flex">
+                        <i class="fa fa-linkedin-square text-[color:var(--FOREGROUND)] text-[x-large]"></i>
+                        <i class="fa fa-telegram text-[color:var(--FOREGROUND)] text-[x-large]"></i>
+                        <i class="fa fa-instagram text-[color:var(--FOREGROUND)] text-[x-large]"></i>
                     </div>
                 </div>
             </div>
         </div>
         <br>
         <br>
-        <div class="communication-bridge-container">
-            <div class="communication-bridge-child">
-                <p>codeUBcomp5@gmail.com</p>
+        <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center w-6/12">
+                <p class="text-[color:var(--FOREGROUND)] ml-[5px]">codeUBcomp5@gmail.com</p>
                 <img src="assets/images/icons/Calling.png" alt="">
             </div>
-            <div class="communication-bridge-child">
-                <p>989397138757+</p>
+            <div class="flex items-center justify-center w-6/12">
+                <p class="text-[color:var(--FOREGROUND)] ml-[5px]">989397138757+</p>
                 <img src="assets/images/icons/Message.png" alt="">
             </div>
         </div>
         <br>
-        <div class="footer">تمام حقوق برای شرکت پارشومارش محفوظ است.</div>
+        <div class="w-full flex items-center justify-center text-[color:var(--FOREGROUND)] font-kalameh-medium">تمام
+            حقوق برای شرکت
+            پارشومارش محفوظ است.</div>
         <br>
+    </div>
+    <div class="hidden fixed top-[110px] w-[100%] h-[400px] flex justify-center items-center my_menu">
+        <div class="w-[95%] h-[100%] bg-[#2B2E2F] p-[30px]">
+            <ul>
+                <a href="index.html">
+                    <li class="leading-[70px] text-xl text-[white] font-kalameh-medium">خانه</li>
+                </a>
+                <a href="about-us.html">
+                    <li class="leading-[70px] text-xl text-[white] font-kalameh-medium">درباره ما</li>
+                </a>
+                <a href="">
+                    <li class="leading-[70px] text-xl text-[white] font-kalameh-medium">تماس با ما</li>
+                </a>
+                <a href="information.html">
+                    <li class="leading-[70px] text-xl text-[white] font-kalameh-medium">اطلاعات مسابقات</li>
+                </a>
+            </ul>
+        </div>
     </div>
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="assets/js/script.js"></script>
 
 </html>
